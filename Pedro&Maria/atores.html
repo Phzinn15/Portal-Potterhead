@@ -1,0 +1,332 @@
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Lista de Atores</title>
+<style>
+    :root{
+        --bg1: #6600ff;
+        --bg2: #020042;
+        --accent: #ffcf49;
+        --card-bg: rgba(255,255,255,0.04);
+    }
+
+    body{
+        font-family: "Lucida Console", "Courier New", monospace;
+        line-height: 1.5;
+        margin: 24px;
+        background: radial-gradient(circle, var(--bg1), var(--bg2));
+        color: var(--accent);
+    }
+
+    header{
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    h1{
+        margin: 6px 0 0;
+        font-size: 1.8rem;
+    }
+
+    .hr{
+        height: 4px;
+        width: 90%;
+        margin: 18px auto;
+        background: linear-gradient(to right, #ffe100, #ffffff, #ffe100);
+        border-radius: 50px;
+        box-shadow: 0 0 12px rgba(255,0,170,0.15);
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 18px;
+        max-width: 1100px;
+        margin: 0 auto 40px;
+    }
+
+    .card{
+        background: var(--card-bg);
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+        transition: transform .15s ease, box-shadow .15s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .card:hover{
+        transform: translateY(-6px);
+        box-shadow: 0 14px 30px rgba(0,0,0,0.55);
+    }
+
+    .card img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+        background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.25));
+    }
+
+    .card .info{
+        padding: 12px;
+    }
+
+    .card h3{
+        margin: 6px 0 4px;
+        font-size: 1rem;
+        color: var(--accent);
+    }
+
+    .card p{
+        margin: 0;
+        font-size: 0.87rem;
+        color: #fff8d8;
+        opacity: 0.95;
+    }
+
+    ul{ display:none; }
+
+    .card { display:flex; flex-direction:column; text-decoration:none; color:inherit; }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Atores dos Filmes</h1>
+    </header>
+
+    <div class="hr" aria-hidden="true"></div>
+
+    <main class="grid">
+         <article class="card">
+            <img src="https://br.web.img3.acsta.net/c_310_420/pictures/19/07/01/23/17/1021290.jpg" alt="Harry">
+            <div class="info"><h3>Harry Potter</h3><p>Daniel Radcliffe</p></div>
+            </article>
+
+        <article class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BODUwOTc5N2MtNTVmZi00MWE0LWE0Y2QtOTAyOTEzZDg1NGFiXkEyXkFqcGc@._V1_.jpg" alt="Ron">
+            <div class="info"><h3>Ronald Weasley</h3><p>Rupert Grint</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://cinema10.com.br/upload/personalidades/personalidades_2255_63306132.jpg">
+            <div class="info"><h3>Hermione Granger</h3><p>Emma Watson</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BM2JjYzI4ZmYtYzU4OS00MjdiLTllZGUtZmNkNjk0NzFlZWZjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+            <div class="info"><h3>Luna Lovegood</h3><p>Evanna Lynch</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTU1NTQ1Nzg5NF5BMl5BanBnXkFtZTcwNTIzNTIwNg@@._V1_.jpg">
+            <div class="info"><h3>Neville Longbottom</h3><p>Matthew Lewis</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://static.wikia.nocookie.net/live-action/images/7/7a/Bonnie_Wright.jpg/revision/latest?cb=20150704213029">
+            <div class="info"><h3>Gina Weasley</h3><p>Bonnie Wright</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oliver_Phelps.jpg/250px-Oliver_Phelps.jpg">
+            <div class="info"><h3>Fred Weasley</h3><p>James Phelps</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Oliver_Phelps_2013.jpg/250px-Oliver_Phelps_2013.jpg">
+            <div class="info"><h3>George Weasley</h3><p>Oliver Phelps</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://ntvb.tmsimg.com/assets/assets/35210_v9_bc.jpg" alt="Julie Walters">
+            <div class="info"><h3>Molly Weasley</h3><p>Julie Walters</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24Nu-F_K7SzjSJaZktn-bTWj4PLSg_Ef2Dg&s">
+            <div class="info"><h3>Arthur Weasley</h3><p>Mark Williams</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://br.web.img3.acsta.net/c_310_420/pictures/16/03/08/10/10/330951.jpg">
+            <div class="info"><h3>Minerva McGonagall</h3><p>Maggie Smith</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Alan_Rickman_cropped_and_retouched.jpg">
+            <div class="info"><h3>Severus Snape</h3><p>Alan Rickman</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://media.fstatic.com/wA4Y4P2eqItCh7EMBHY-srGN_Bg=/195x289/smart/filters:format(webp)/media/artists/avatar/2014/04/richard-harris_a16250_11.png">
+            <div class="info"><h3>Albus Dumbledore</h3><p>Richard Harris</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAwTRBD9r0pK4t9MCLvW_Kq5PoZN-pm3TrYA&s">
+            <div class="info"><h3>Albus Dumbledore</h3><p>Michael Gambon</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://cinema10.com.br/upload/personalidades/personalidades_2088_garyoldman-1.jpg"
+            <div class="info"><h3>Sirius Black</h3><p>Gary Oldman</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BYTI0NTU1ZDUtMzA3Yi00YzkzLTg0M2EtYTgxMzc2MTdkZGQ1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+            <div class="info"><h3>Peter Pettigrew</h3><p>Timothy Spall</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://i.guim.co.uk/img/media/662b0114064284bb5e2d2d3fcb6f478b216815c8/0_111_1976_1185/master/1976.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=467666dd595c2c3f893258342c42041d">
+            <div class="info"><h3>Remus Lupin</h3><p>David Thewlis</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://br.web.img3.acsta.net/pictures/14/10/06/18/17/395068.jpg">
+            <div class="info"><h3>Rubeus Hagrid</h3><p>Robbie Coltrane</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://cinema10.com.br/upload/personalidades/personalidades_2265_Ralph%20Fiennes.jpg">
+            <div class="info"><h3>Lord Voldemort</h3><p>Ralph Fiennes</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://i.pinimg.com/736x/f8/76/94/f876947a4621891fab5f31b20de0acb1.jpg">
+            <div class="info"><h3>Tom Riddle (jovem)</h3><p>Christian Coulson</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://br.web.img3.acsta.net/pictures/19/03/20/16/05/1007568.jpg">
+            <div class="info"><h3>Cedric Diggory</h3><p>Robert Pattinson</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQP709Z0GeYtTt3W5AcB66EWeXKSvjvIX1owMxhGUhRWAvlgEza7EpfFx-Bw649Fb9DuDY1-hhAAyNzfh0dtz7DSQu3uHTeniJvJ3vLuleQy_1z_eCNEhfdbH6MJrjSxucr_mg5Nea5zwg&s=19">
+            <div class="info"><h3>Fleur Delacour</h3><p>Clémence Poésy</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT65MkUtxRgdDfceKV1zGmcR-o7yq7hUdTcdg&s">
+            <div class="info"><h3>Viktor Krum</h3><p>Stanislav Ianevski</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Emma_Thompson_2022.jpg/960px-Emma_Thompson_2022.jpg">
+            <div class="info"><h3>Sibila Trelawney</h3><p>Emma Thompson</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://images.fandango.com/ImageRenderer/300/0/redesign/static/img/default_poster.png/0/images/masterrepository/performer%20images/206568/TomFelton-2022_r.jpg">
+            <div class="info"><h3>Draco Malfoy</h3><p>Tom Felton</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK1OyqoZqfDSmf8h_pmd1elyulaDB8e7NtFaJMGUZAoMA-mubSiM0SJYC3iiRbhQb0WQK4z8uOgF4fZg3zsV2BgmCBSGRypoKHkt7iHjD7&s=10">
+            <div class="info"><h3>Lucius Malfoy</h3><p>Jason Isaacs</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQ0t2uAH4ENgeENDUNQ-lpWQAEi3OidHJjGAWkYJzCBJb-KBFljJCPlyB6jbBSjcmmMDYJnbdbjgipkdZ2GY7YQf2Qw_Xr7ERN6ZSzYtXdZmNehIjctOFsx0JsSgPpcwwVvT_9eC0dk3tM&s=19">
+            <div class="info"><h3>Narcisa Malfoy</h3><p>Helen McCrory</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://bifa.imgix.net/web/2018/10/tumblr_mjozs7CYUg1s88ss5o1_1280.jpg?auto=compress%2Cformat&fit=scale&h=1600&ixlib=php-3.3.1&w=1600&wpsize=xl">
+            <div class="info"><h3>Bellatrix Lestrange</h3><p>Helena Bonham Carter</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPU8hwUa8RhQ2-KuHPLixITEY3iYf5ccqnE2chkgWROrYn5_VxIdhcL9jchuIZtVX1agbA1xXWIgh_ttGT-0j_82-DIwjYlvqGHwE_eHn6&s=10">
+            <div class="info"><h3>Dolores Umbridge</h3><p>Imelda Staunton</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNgZKkocK7hdIRngwipNGcEw6Hbw4E0BJQt9IBMlYf1XxUpuIiIR6JduZHvT6IjK7k9u63H8cxFyD_VfIORlo2nWE4SmDaWoIOgeKVPuf_&s=10">
+            <div class="info"><h3>Nymphadora Tonks</h3><p>Natalia Tena</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ioJB_swewLof8AWQUStoEXpzlwCovhRebWOy3N-jvI6dGLYkZsfn7yAZAI-Uu0Rg3dzHNz0mQEfng-D8uA6CL7YsKpuyqZlQqwuF73UC&s=10">
+            <div class="info"><h3>Cho Chang</h3><p>Katie Leung</p></div>
+        </article>
+      <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5SkkLhsHqb543GJvXICGzc65T_dU_xmwJM-Gi5WnBVhs5XxifZ8knx3WE8Tq6AqUTG3qTnRkQDzbommhfzsEE4ktnTxd85x6bkYYpJQ9YfQ&s=10">
+            <div class="info"><h3>Petúnia Dursley</h3><p>Fiona Shaw</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTM-e8Vji3h90QWzASTBBDVWU80HzU81lfqA&s">
+            <div class="info"><h3>Valter Dursley</h3><p>Richard Griffiths</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BZjQzOTg0M2EtNzk3MC00NzZhLTk2MTAtNTUxMmMwODY0OTQ0XkEyXkFqcGc@._V1_QL75_UY207_CR86,0,140,207_.jpg">
+            <div class="info"><h3>Dudley Dursley</h3><p>Harry Melling</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjA5Mjk0NzU4MV5BMl5BanBnXkFtZTcwNzc1Njk5Nw@@._V1_.jpg">
+            <div class="info"><h3>Argus Filch</h3><p>David Bradley</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQNDKgvFUffW_6DHUX2EaT3CSqmLAJxUKO6S3ebjseAGmUcOu6yyyEQ364555E9SdxnauknMSTJvwEQngToa6aeLEMcXa4jcGLIfMDWVxJ4Q&s=10">
+            <div class="info"><h3>Olívio Wood</h3><p>Sean Biggerstaff</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSneuoAyDU5JOtF00uV8HcfCPUIL1mNmY2gc71fOue2GzBjwUCHzHsJCtx-9ePF_--SKH9ROPqN74z1KLwzfE9dVoKz3NtHm-gDU9nMPIjV5BXnAAqwi5QtWr0dI32oETwnJ9k2g3EgYw5V&s=19">
+            <div class="info"><h3>Murta Que Geme</h3><p>Shirley Henderson</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQag_L-1WQ-cFB6KSAYZKuQwi5j935Bge-v99FIUVeQRgFFHSntZQTOg8LIADG8JQrYDoyhTNUC_rixmxCbW_btrpMKtpSL0fsfDoAZV-cw&s=10">
+            <div class="info"><h3>Astoria Greengrass</h3><p>Jade Olivia Gordon</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgiBa9RMxgLFYdEydh5Gsezf4Ey7ajpme36i9-wEVG7bSeF2RWF56gfvPEgRLora-GT5-isz60Hl7kVIEq6NSalyKeYbCXNkeg00gP9eSx&s=10">
+            <div class="info"><h3>Gregório Goyle</h3><p>Joshua Herdman</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSVsIOOPAkqXQZmW9iFtw4k-jGNtuOasNhL0lehjff-sSesD06nZYjixRFAvduf7nxGjnXGctbj_SnCXRTAriNNigk0Z7rChSZUh59TzKKDYepWtPwt4uo0G8PakZwMDJYt0Nn2WBkT8Ik&s=19">
+            <div class="info"><h3>Gilderoy Lockhart</h3><p>Kenneth Branagh</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpk_vIZP7Li3hMZCi34p-Tx9Xxi4yg-2-xLTklZq8Quxb4C0qfBYaHJSOUJxzhLorfrLPOxcCAhRTRp4uiv51OrNhOTlB77LY_CBjAMC-x3Q&s=10">
+            <div class="info"><h3>Pansy Parkinson</h3><p>Scarlett Byrne</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmfSmdIRKWPhwUSYHgYwHpzMwnphUoV6LR_-pAHhr_mjm4L3FBkQNc-MtIXIrwkPgCIFd-VfzGEPIDQXny0qzMxi_YPbhQVUwgJqfxACoP&s=10">
+            <div class="info"><h3>Lilá Brown</h3><p>Jessie Cave</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://pm1.aminoapps.com/6391/42d93be9e36c38c1833ea5d94c788e700bb696fd_hq.jpg">
+            <div class="info"><h3>Dino Thomas</h3><p>Alfred Enoch</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://image.tmdb.org/t/p/w500/vyLIquF45MpN6OOPmk8L7gnmKrY.jpg">
+            <div class="info"><h3>Lílian Evans Potter</h3><p>Geraldine Somerville</p></div>
+        </article>
+
+        <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk7Zk1FWtfwOREzYM-giAUN31-acGZlXq-cw&s">
+            <div class="info"><h3>James Potter</h3><p>Adrian Rawlins</p></div>
+        </article>
+    </main>
+
+    <div class="hr" aria-hidden="true"></div>
+</body>
+</html>
+

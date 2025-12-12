@@ -1,0 +1,380 @@
+<html>
+<head>
+    <title>Sessão Feminina</title>
+
+    <style>
+        body {
+            background: radial-gradient(circle, #040072, #000000);
+            color: #fff;
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            background-color: #4c00ff;
+            color: rgb(255, 208, 0);
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: 0.25s;
+            border: 2px solid #00245a;
+            border-color: #3700ff;
+            transform: translateY(-3px);
+        }
+
+        h1 {
+            text-align: center;
+            padding: 25px 0;
+            font-size: 32px;
+            font-weight: 600;
+            color: rgb(255, 208, 0);
+            letter-spacing: 1px;
+        }
+
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .produto-card {
+            background-color: #000000;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform .3s, box-shadow .3s;
+            border: 1px solid #4e008a;
+        }
+
+        .produto-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #0015ff;
+        }
+
+        .produto-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #03003b;
+        }
+
+        .produto-card .nome {
+            margin-top: 10px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .produto-card .preco {
+            margin-top: 5px;
+            color: #7b2ee6;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        input.popup-toggle {
+            display: none;
+        }
+
+        input.popup-toggle + .overlay {
+            display: none;
+        }
+
+        input.popup-toggle:checked + .overlay {
+            display: flex;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.75);
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .popup {
+            background: #7300ff;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            width: 320px;
+            border: 1px solid #cc74ff;
+            box-shadow: 0 0 15px #000;
+        }
+
+        .popup h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .botoes a,
+        .botoes label {
+            width: 45%;
+            padding: 12px 0;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-sim {
+            background: #1700b0;
+        }
+
+        .btn-nao {
+            background: #060082;
+        }
+
+        .botoes a:hover,
+        .botoes label:hover {
+            opacity: 0.85;
+        }
+         hr {
+            border: none;
+            height: 4px;
+            width: 80%;
+            margin: 50px auto;
+            background: linear-gradient(to right, #000fff, #a200ff, #0000ff);
+            border-radius: 50px;
+            box-shadow: 0 0 15px rgba(255, 0, 85, 0.6);
+            transition: all 0.3s ease-in-out;
+        }
+        hr:hover {
+            transform: scaleX(1.05);
+            box-shadow: 0 0 25px rgba(255, 0, 85, 0.9);
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>Sessão Feminina</h1>
+
+<input class="popup-toggle" type="checkbox" id="popup-toggle-1">
+<div class="overlay">
+    <div class="popup">
+        <h2>Deseja comprar este item?</h2>
+        <div class="botoes">
+            <a href="confirmacao.html" class="btn-sim">Sim</a>
+            <label for="popup-toggle-1" class="btn-nao">Não</label>
+        </div>
+    </div>
+</div>
+
+<div class="catalogo">
+
+    <label for="popup-toggle-1" class="produto-card">
+        <img src="https://cea.vtexassets.com/arquivos/ids/59267189/Foto-0.jpg?v=638913087422530000" alt="">
+        <div class="nome">Camiseta Feminina de Algodão Harry Potter Rosa</div>
+        <div class="preco">R$ 89,99</div>
+    </label>
+
+    <label for="popup-toggle-1" class="produto-card">
+        <img src="https://cea.vtexassets.com/arquivos/ids/59280339/Foto-0.jpg?v=638948456466000000" alt="">
+        <div class="nome">Camiseta Feminina de Algodão Harry Potter Off White</div>
+        <div class="preco">De <s>R$ 59,99</s> → R$ 49,99</div>
+    </label>
+
+    <label for="popup-toggle-1" class="produto-card">
+        <img src="https://cea.vtexassets.com/arquivos/ids/59250279/Foto-3.jpg?v=638865605562800000" alt="">
+        <div class="nome">Camiseta Feminina de Algodão Harry Potter Off White</div>
+        <div class="preco">De <s>R$ 59,99</s> → R$ 49,99</div>
+    </label>
+
+    <label for="popup-toggle-1" class="produto-card">
+        <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rdx9-mdn3zgw0cctg6c@resize_w900_nl.webp" alt="">
+        <div class="nome">T-Shirt Feminina Harry Potter | Estilo Luna Lovegood Criativo</div>
+        <div class="preco">De <s>R$79,99</s> → R$41,59</div>
+    </label>
+
+</div>
+    <a href="tabela.html" class="btn">Tabela de Tamanhos</a>
+<hr>
+
+<h1>Sessão Masculina</h1>
+
+<input class="popup-toggle" type="checkbox" id="popup-toggle-1">
+<div class="overlay">
+    <div class="popup">
+        <h2>Deseja comprar este item?</h2>
+        <div class="botoes">
+            <a href="confirmacao.html" class="btn-sim">Sim</a>
+            <label for="popup-toggle-1" class="btn-nao">Não</label>
+        </div>
+    </div>
+</div>
+
+<div class="catalogo">
+
+    <label for="popup-toggle-1" class="produto-card">
+        <img src="https://cea.vtexassets.com/arquivos/ids/59301986/Foto-0.jpg?v=639005606439930000" alt="">
+        <div class="nome">Camiseta Oversized Masculina com Gola Grifinória Harry Potter Vermelha</div>
+        <div class="preco">R$ 129,99</div>
+    </label>
+
+    <label for="popup-toggle-1" class="produto-card">
+        <img src="https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/630094/01/mod05/fnd/BRA/fmt/png" alt="">
+        <div class="nome">Jaqueta T7 Track PUMA X HARRY POTTER Masculina</div>
+        <div class="preco">De <s>R$ 699,99</s> → R$ 499,99</div>
+    </label>
+
+    <label for="popup-toggle-1" class="produto-card">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRDI2eHb9Dz0pjICPS8DszfX6l1gYH0M-pdwtI8p5d_TebznOTGbxdvv_WhUz5TJTMQ-gWANRlJ66atRfST1GOxAx2o2bpy8ezkN-yJOiw" alt="">
+        <div class="nome">Fanlab Camiseta Masculina Regular Harry Potter Beco Diagonal Bege</div>
+        <div class="preco">De R$ <s>119,99</s> → R$ 109,99 </div>
+    </label>
+
+    <label for="popup-toggle-1" class="produto-card">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT6AVZT1U4cccS3l_kdeZOEJ1VYLE5rSX5dxmsD3QJXARgGCzKsZkAAcybuO3Cg4fpoV_rqz09C1AIadJhL_K5MgbnwNt-ekr1HWRqIe3Se1eUDR4qWXX_Z" alt="">
+        <div class="nome">Fanlab Camiseta Masculina Relíquias da Morte Harry Potter</div>
+        <div class="preco">De <s>R$ 139,90</s> → R$ 59,99</div>
+    </label>
+</div>
+    <a href="tabela.html" class="btn">Tabela de Tamanhos</a>
+<hr>
+
+<h1>Itens das Casas</h1>
+
+<input class="popup-toggle" type="checkbox" id="popup-toggle-2">
+<div class="overlay">
+    <div class="popup">
+        <h2>Deseja comprar este item?</h2>
+        <div class="botoes">
+            <a href="confirmacao2.html" class="btn-sim">Sim</a>
+            <label for="popup-toggle-2" class="btn-nao">Não</label>
+        </div>
+    </div>
+</div>
+
+<div class="catalogo">
+
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://m.media-amazon.com/images/I/81fkXJCBh-L._SY342_.jpg" alt="">
+        <div class="nome">Harry Potter - A Magia da Lufa-Lufa: Livro Oficial de Artefatos do Mundo Mágico</div>
+        <div class="preco">R$ 99,90</div>
+    </label>
+
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://img.ltwebstatic.com/v4/j/spmp/2025/07/14/0f/1752480324c02e097ea76e1e7077d5f52b0bb82760_thumbnail_405x.webp" alt="">
+        <div class="nome">Harry Potter Bolsa Transversal Feminina - Casas</div>
+        <div class="preco">R$ 191,89</div>
+    </label>
+
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://images.tcdn.com.br/img/img_prod/460977/capa_adulto_sonserina_hogwards_legacy_luxury_harry_potter_unissex_mkp_119547_variacao_42885_1_59957386b950464ae4a2f4c894ae15a4.jpeg" alt="">
+        <div class="nome">Capa Adulto Sonserina</div>
+        <div class="preco">R$ 224,95</div>
+    </label>
+
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSWtlzXmkSUh0u7pArzkXDvds3mea-PPQt6k4hIJ4di2E3C1yqX4MIIGVgEeFtic0copWwIdCmks85T5OkLsEhOJspZdkp9JvXwTXwReMugHfpK18o29CCfaQ" alt="">
+        <div class="nome">Cachecol Casa Corvinal Harry Potter</div>
+        <div class="preco">R$56,90</div>
+    </label>
+</div>
+<hr>
+
+<h1>Itens de Colecionador</h1>
+
+<input class="popup-toggle" type="checkbox" id="popup-toggle-2">
+<div class="overlay">
+    <div class="popup">
+        <h2>Deseja comprar este item?</h2>
+        <div class="botoes">
+            <a href="confirmacao2.html" class="btn-sim">Sim</a>
+            <label for="popup-toggle-2" class="btn-nao">Não</label>
+        </div>
+    </div>
+</div>
+
+<div class="catalogo">
+
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_829132-MLB70446707400_072023-F.webp" alt="">
+        <div class="nome">Harry Potter Boneco Funko Pop Harry Potter #01 </div>
+        <div class="preco">R$121,81</div>
+    </label>
+
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_867985-MLB91971489678_092025-F.webp" alt="">
+        <div class="nome">Chapéu Seletor Kit Bruxo + Brindes</div>
+        <div class="preco">R$78,99</div>
+    </label>
+
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://images.tcdn.com.br/img/img_prod/460977/kit_pack_4_pecas_vassoura_nimbus_200_nimbus_2001_firebolt_caixa_de_quadribol_harry_potter_139553_1_a3d858fea790e5f35849ffc793ed09dc.jpg" alt="">
+        <div class="nome">Kit Pack 4 Peças Vassoura Nimbus</div>
+        <div class="preco">R$ 679,96</div>
+    </label>
+    
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQEpvhBG6wKB-YWPUZs6reqsvbE_nYqWCYZyo83Rn2v9ijNjl481vt5DduZ6jCIOXAgmoYTlM6Dv8k4Tt7GxPNEAhZrSs2UGSVsnzf24ARCP7TQiT6sSz_8Og">
+        <div class="nome">Castelo de Hogwarts Harry Potter 6120 peças</div>
+        <div class="preco">R$ 2.499,90</div>
+    </label>
+</div>
+<hr>
+
+<h1>Livros</h1>
+
+<!-- Section popup: uses confirmacao2.html -->
+<input class="popup-toggle" type="checkbox" id="popup-toggle-2">
+<div class="overlay">
+    <div class="popup">
+        <h2>Deseja comprar este item?</h2>
+        <div class="botoes">
+            <a href="confirmacao2.html" class="btn-sim">Sim</a>
+            <label for="popup-toggle-2" class="btn-nao">Não</label>
+        </div>
+    </div>
+</div>
+
+<div class="catalogo">
+
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_853949-MLA79351874546_092024-F.webp" alt="">
+        <div class="nome">HARRY POTTER E A PEDRA FILOSOFAL (Ilustrado por MinaLima)</div>
+        <div class="preco">R$ 166,90</div>
+    </label>
+
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://images.tcdn.com.br/img/img_prod/980922/harry_potter_e_o_prisioneiro_de_azkaban_casas_hogwarts_lufa_lufa_219135_1_70c63151896c302d5c71a9815421adb2.jpg" alt="">
+        <div class="nome">Harry Potter e o Prisioneiro de Azkaban - Casas</div>
+        <div class="preco">R$ 84,90</div>
+    </label>
+
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://m.media-amazon.com/images/I/51rJ3wNX4ZL._SY445_SX342_ControlCacheEqualizer_.jpg" alt="">
+        <div class="nome">Harry Potter e a Câmara Secreta</div>
+        <div class="preco">R$ 36,62</div>
+    </label>
+
+    <label for="popup-toggle-2" class="produto-card">
+        <img src="https://m.media-amazon.com/images/I/91ZsuvQIJjL._SY466_.jpg" alt="">
+        <div class="nome">Animais Fantásticos e Onde Habitam</div>
+        <div class="preco"> De: <s>R$ 79,90</s> → R$53,86 </div>
+    </label>
+</div>
+
+</body>
+</html>
